@@ -1,0 +1,592 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#header {
+  background-color: #080808;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 54px;
+  overflow: hidden;
+}
+
+#header-container {
+  /* border: 1px white solid; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  margin: auto;
+}
+
+#logo {
+  display: flex;
+}
+
+#header-img {
+  /* border: 1px white solid; */
+  width: 16px;
+  height: 20px;
+}
+
+#nav-bar {
+  width: 50%;
+  overflow: hidden;
+}
+
+#nav-bar ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  color: #b4b4b4;
+  font-size: 14px;
+  transition: all 200ms ease-in;
+}
+
+.nav-link:hover {
+  color: #dadada;
+}
+
+#main {
+  /* border: 1px red solid; */
+  padding: 68px 10px 20px;
+  overflow: hidden;
+}
+
+#main-container {
+  /* border: 1px blue solid; */
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.main-content {
+  padding: 20px 0 0;
+  color: #080808;
+}
+
+.main-content .title {
+  font-size: 4.8rem;
+  padding-bottom: 20px;
+}
+
+.main-content .description {
+  line-height: 1.6;
+}
+
+.main-img {
+  width: 50%;
+  height: 100%;
+  padding: 0px 10px;
+  margin: 0px 20px;
+}
+
+#features {
+  /* border: 1px red solid; */
+  padding: 68px 10px 0px;
+  background-color: #efefef;
+  overflow: hidden;
+}
+
+#features-title {
+  /* border: 1px red solid; */
+  text-align: center;
+  font-size: 3rem;
+  margin: 0 auto 30px;
+  width: 75%;
+  color: #080808;
+}
+
+#features-container {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-gap: 18px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.feature {
+  border-radius: 10px;
+  color: #080808;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+}
+
+.feature .icon {
+  color: #080808;
+  padding: 20px 0px;
+}
+
+.feature .title {
+  font-size: 1.4rem;
+  padding: 12px 10px 4px;
+}
+
+.feature .info {
+  line-height: 1.2;
+  font-size: 0.90rem;
+  padding: 4px 10px 12px;
+}
+
+#products {
+  /* border: 1px red solid; */
+  background-color: #efefef;
+  padding: 68px 0 0;
+  overflow: hidden;
+}
+
+#products-title {
+  /* border: 1px red solid; */
+  color: #080808;
+  width: 75%;
+  margin: 0 auto 30px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#products-container {
+  width: 75%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2%;
+}
+
+.product {
+  height: 640px;
+  overflow: hidden;
+}
+
+.product .image {
+  height: 46%;
+}
+
+.product .content {
+  height: 54%;
+  width: 100%;
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product-title {
+  margin: 18px 0;
+  color: #080808;
+}
+
+.special {
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding: 3px;
+  border: 2px #080808 solid;
+  border-radius: 4px;
+  position: relative;
+  left: 2px;
+  bottom: 6px;
+}
+
+.product-info {
+  font-size: 0.90rem;
+  color: #080808;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-info li {
+  margin-bottom: 18px;
+}
+
+.product-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.buy {
+  width: 48px;
+  padding: 6px;
+  margin-bottom: 14px;
+  display: inline-block;
+  border-radius: 18px;
+  background-color: #2268cc;
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.learn a {
+  color: #2268cc;
+}
+
+.learn {
+  font-size: 0.88rem;
+  color: #2268cc;
+  display: flex;
+  align-items: flex-end;
+}
+
+.product-links .icon {
+  margin-left: 2px;
+}
+
+.buy:hover {
+  background-color: #004fcf;
+}
+
+.learn a:hover {
+  color: #004fcf;
+  text-decoration: underline;
+}
+
+#about {
+  /* border: 1px red solid; */
+  background-color: #efefef;
+  overflow: hidden;
+  padding: 68px 0 0;
+}
+
+#about-container {
+  /* border: 1px red solid; */
+  width: 50%;
+  margin: auto;
+}
+
+#about-title {
+  padding: 0 0 30px;
+  margin: auto;
+  font-size: 2rem;
+  text-align: center;
+  color: #080808;
+}
+
+#video {
+  width: 100%;
+  height: 340px;
+}
+
+#subscribe {
+  /* border: 1px red solid; */
+  background-color: #efefef;
+  overflow: hidden;
+  padding: 68px 0;
+}
+
+#subscribe-container {
+  /* border: 1px red solid; */
+  width: 50%; 
+  margin: auto;
+}
+
+#subscribe-title {
+  /* border: 1px red solid */
+  padding: 0 0 10px;
+  margin: auto;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #080808;
+}
+
+#subscribe-info {
+  padding: 18px 18px;
+  text-align: center;
+}
+
+form {
+  padding: 14px;
+  display: flex;
+}
+
+input[type="email"] {
+  display: inline-block;
+  width: 70%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  background-color: #fff;
+  border: 1px #c4c4c4 solid;
+  border-right: none;
+  border-radius: 20px 0px 0px 20px;
+  outline: none;
+  transition: all 500ms ease-in;
+}
+
+input[type="email"]:focus {
+  border-color: #000;
+}
+
+input[type="submit"] {
+  display: inline-block;
+  width: 30%;
+  padding: 12px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 0px 20px 20px 0px;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 300ms ease-in;
+}
+
+input[type="submit"]:hover {
+  background-color: #181818;
+}
+
+#footer {
+  background-color: #d8d8d8;
+}
+
+#footer .copyright {
+  padding: 14px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  #header {
+    height: 68px;
+  }
+
+  #nav-bar {
+    width: 75%;
+  }
+
+  #main {
+    padding-top: 82px;
+  }
+
+  #main-container {
+    flex-direction: column-reverse;
+    padding-top: 32px;
+  }
+
+  .main-img {
+    width: 100%;
+  }
+
+  .main-content {
+    padding: 10px 10px 0;
+  }
+
+  #features {
+    padding-top: 82px;
+  }
+  
+  #features-title {
+    font-size: 2.6rem;
+  }
+
+  #features-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #products {
+    padding-top: 82px;
+  }
+
+  #products-title {
+    font-size: 1.8rem;
+  }
+
+  #features-container {
+    width: 90%;
+  }
+  
+  #products-container {
+    width: 85%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product {
+    height: 560px;
+  }
+
+  #about {
+    padding-top: 82px;
+  }
+
+  #about-container {
+    width: 75%;
+  }
+
+  #about-title {
+    font-size: 1.8rem;
+  }
+  
+  #subscribe {
+    padding-top: 82px;
+  }
+
+  #subscribe-container {
+    width: 75%;
+  }
+
+  #subscribe-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #header-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+    margin: 0;
+    width: 100%;
+  }
+
+  #nav-bar {
+    margin: 14px 0px 0px;
+    width: 85%;
+  }
+
+  #main-container {
+    flex-direction: column-reverse;
+    padding-top: 32px;
+    width: 100%;
+  }
+
+  .main-content .title {
+    font-size: 3rem;
+  }
+  
+  #features-title {
+    font-size: 1.2rem;
+    width: 80%;
+  }
+
+  #features-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 95%;
+  }
+
+  #products-title {
+    font-size: 1.2rem;
+    width: 75%;
+  }
+  
+  #products-container {
+    width: 80%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5%;
+  }
+
+  .product {
+    height: 540px;
+  }
+
+  .product-title {
+    font-size: 1.2rem;
+  }
+
+  .product-info {
+    font-size: 0.8rem;
+  }
+
+  .product .image {
+    height: 35%;
+  }
+
+  .product .content {
+    height: 65%;
+  }
+
+  .special {
+    font-size: 0.54rem;
+    font-weight: 600;
+    padding: 2px;
+    border: 1.4px #1b1b1b solid;
+    bottom: 4px;
+  }
+  
+  .buy {
+    font-size: 0.7rem;
+    padding: 4px;
+    width: 38px;
+  }
+
+  .learn {
+    font-size: 0.7rem;
+  }
+
+  #about-container {
+    width: 95%;
+  }
+
+  #about-title {
+    font-size: 1.4rem;
+    width: 80%;
+  }
+
+  #video {
+    height: 180px;
+  }
+
+  #subscribe-container {
+    width: 95%;
+  }
+
+  #subscribe-title {
+    font-size: 1.2rem;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #nav-bar ul {
+    flex-direction: column;
+  }
+
+  #nav-bar ul li {
+    padding: 4px 0px;
+  }
+
+  #main {
+    padding-top: 180px;
+  }
+
+  #main-title {
+    font-size: 1.8rem;
+  }
+
+  .product {
+    height: 660px;
+  }
+}
